@@ -1,0 +1,51 @@
+1)
+-> ipconfig
+-> ipconfig/all
+-> ipconfig/release
+-> ipconfig/renew
+-> ipconfig/flushdns
+-> ipconfig/displaydns
+
+2) 
+-> ifconfig -a
+-> ifconfig eth80
+-> sudo ifconfig eth80 up
+-> sudo ifconfig eth80 down
+-> ifconfig eth80 mtu 1500
+-> ifconfig promisc
+-> ifconfig -a | grep "inet"
+
+3)
+-> nslookup www.google.com
+-> nslookup -type=any www.google.com
+-> nslookup -type=NS www.google.com
+-> nslookup -type=MX www.google.com
+-> nslookup -type=A www.google.com
+-> nslookup -type=AAAA www.google.com
+-> nslookup -type=TXT www.google.com
+
+4)
+-> tracepath www.google.com
+-> tracepath -b www.google.com
+-> tracepath -n www.google.com
+-> tracepath -T www.google.com
+-> tracepath -l 29 www.google.com
+-> tracepath -p www.google.com
+
+5) 
+-> dig
+-> dig www.google.com -A
+-> dig www.google.com -AAAA
+-> dig www.google.com -MX
+-> dig www.google.com -NS
+-> dig www.google.com -TXT
+
+6) 
+-> traceroute www.google.com (linux) | tracert www.googl.com (windows)
+-> traceroute -4 www.google.com
+-> traceroute -6 www.google.com
+-> traceroute -T www.google.com
+-> traceroute -I www.google.com
+-> traceroute -p 443 www.google.com (https)
+-> traceroute -n www.google.com
+-> traceroute -q 5 www.google.com
